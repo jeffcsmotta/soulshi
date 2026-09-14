@@ -1,0 +1,16 @@
+{
+  "name": "Soulshi Sushi Lourdes",
+  "short_name": "Soulshi",
+  "description": "Sushi, temakeria e pokes no bairro Lourdes em Caxias do Sul. Peça pelo WhatsApp com tele-entrega e retirada.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0D0D0F",
+  "theme_color": "#0D0D0F",
+  "icons": [
+    {
+      "src": "assets/logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
