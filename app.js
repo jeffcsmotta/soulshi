@@ -37,9 +37,30 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderMenu();
     setupMenuSearch();
     setupCartDrawerListeners();
+    setupOniraCta();
     updateCartUI();
     if (window.lucide) lucide.createIcons();
 });
+
+/* Widget Onira: recolhível + transparente ao scroll */
+function setupOniraCta() {
+    const cta = document.getElementById('onira-cta');
+    const close = document.getElementById('onira-cta-close');
+    if (!cta) return;
+    if (close) {
+        close.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            cta.classList.toggle('collapsed');
+        });
+    }
+    let t;
+    window.addEventListener('scroll', () => {
+        cta.classList.add('scrolling');
+        clearTimeout(t);
+        t = setTimeout(() => cta.classList.remove('scrolling'), 180);
+    }, { passive: true });
+}
 
 /* ---------- Catálogo ---------- */
 
