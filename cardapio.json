@@ -2,7 +2,8 @@
   "merchant": {
     "name": "Soulshi Sushi Lourdes",
     "address": "Av. Júlio de Castilhos, 962 - Lourdes, Caxias do Sul - RS",
-    "phone": "(54) 3019-2888",
+        "phone": "(54) 3019-2888",
+        "whatsapp": "555492423280",
     "rating": 4.6,
     "reviews": 951
   },

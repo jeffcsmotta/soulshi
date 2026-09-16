@@ -1,13 +1,12 @@
 /* ==========================================================================
    SOULSHI SUSHI LOURDES — Onira.fly engine
    Catálogo via cardapio.json (84 itens reais do Goomer) + checkout WhatsApp
-   WhatsApp configurado: +55 54 3019-2888 (telefone publicado — confirmar
-   com a casa se é também o WhatsApp oficial de pedidos).
+   WhatsApp oficial confirmado com a casa: +55 54 9242-3280.
    ========================================================================== */
 
 const CLIENT_CONFIG = {
     name: 'Soulshi Sushi Lourdes',
-    whatsappNumber: '555430192888',
+    whatsappNumber: '555492423280',
     address: 'Av. Júlio de Castilhos, 962 - Lourdes, Caxias do Sul - RS',
 };
 
