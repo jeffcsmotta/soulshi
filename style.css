@@ -39,9 +39,14 @@
     --border-glass: rgba(255, 255, 255, 0.08);
     --border-glass-hover: rgba(241, 90, 35, 0.45);
 
-    /* Tipografia: Outfit + Plus Jakarta Sans */
+    /* Tipografia: Outfit + Plus Jakarta Sans + Shojumaru (Estilo Japonês) */
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-japanese: 'Shojumaru', cursive;
+
+    /* Botão CTA Laranja Vibrante */
+    --btn-orange: linear-gradient(135deg, #FF6520 0%, #EA4808 100%);
+    --btn-orange-hover: linear-gradient(135deg, #FF7B3B 0%, #F55512 100%);
 
     /* Radius Curvo & Refinado (Boutique Orgânica) */
     --radius-xs: 8px;
@@ -242,6 +247,15 @@ h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 800; line-height
 .subtitle { color: var(--accent); font-family: var(--font-heading); font-size: 0.78rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 4px; }
 .subtitle-red { font-size: 0.76rem; font-weight: 800; color: #FDA4AF; letter-spacing: 1.5px; margin-bottom: 4px; display: block; }
 .title { font-size: clamp(1.6rem, 3.4vw, 2.3rem); font-weight: 900; margin-bottom: 8px; }
+.menu-section .title { 
+    font-family: var(--font-japanese); 
+    font-size: clamp(1.65rem, 3.8vw, 2.45rem); 
+    font-weight: 400; 
+    letter-spacing: 0.03em; 
+    line-height: 1.25; 
+    color: #FFFFFF; 
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
+}
 .section-desc { color: var(--text-muted); font-size: 0.94rem; max-width: 600px; margin: 0 auto 18px auto; }
 
 /* Busca Instantânea Compacta */
@@ -429,25 +443,28 @@ h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 800; line-height
 .btn-card-action { 
     display: inline-flex; 
     align-items: center; 
-    gap: 5px; 
-    padding: 7px 16px; 
-    background: var(--accent-gradient-subtle); 
-    color: #FFFFFF; 
-    border: 1px solid rgba(241, 90, 35, 0.55); 
+    gap: 6px; 
+    padding: 8px 18px; 
+    background: var(--btn-orange); 
+    color: #FFFFFF !important; 
+    border: 1px solid rgba(255, 255, 255, 0.28); 
     border-radius: var(--radius-pill); 
     font-family: var(--font-heading); 
-    font-weight: 800; 
-    font-size: 0.82rem; 
+    font-weight: 700; 
+    font-size: 0.84rem; 
     cursor: pointer; 
     transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); 
     min-height: 38px; 
+    box-shadow: 0 4px 14px rgba(241, 90, 35, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
 }
 .btn-card-action:hover { 
-    background: var(--accent-gradient); 
-    color: #fff; 
-    border-color: rgba(255, 255, 255, 0.3);
+    background: var(--btn-orange-hover); 
+    color: #FFFFFF !important; 
+    border-color: rgba(255, 255, 255, 0.45);
     transform: translateY(-2px); 
-    box-shadow: 0 6px 18px var(--accent-glow), inset 0 1px 1px rgba(255, 255, 255, 0.25); 
+    box-shadow: 0 6px 20px rgba(241, 90, 35, 0.58), inset 0 1px 0 rgba(255, 255, 255, 0.4); 
 }
 
 /* ==========================================================================
