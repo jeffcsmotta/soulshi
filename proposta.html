@@ -16,11 +16,23 @@
     --color-primary: #F15A23 !important;
     --color-primary-hover: #D94914 !important;
     --color-accent-amber: #FB923C !important;
+    --accent-gradient: linear-gradient(135deg, #F15A23 0%, #852204 55%, #240801 100%) !important;
+    --accent-gradient-hover: linear-gradient(135deg, #FF6F3B 0%, #A22B07 55%, #380D02 100%) !important;
 }
 body{overflow-x:hidden}
 .text-orange { color: #F15A23 !important; }
-.btn-primary { background: #F15A23 !important; color: #FFF !important; border-color: #F15A23 !important; box-shadow: 0 4px 20px rgba(241,90,35,0.35) !important; }
-.btn-primary:hover { background: #D94914 !important; border-color: #D94914 !important; transform: translateY(-2px); }
+.btn-primary { 
+    background: linear-gradient(135deg, #F15A23 0%, #852204 55%, #240801 100%) !important; 
+    color: #FFF !important; 
+    border: 1px solid rgba(255,255,255,0.22) !important; 
+    box-shadow: 0 6px 22px rgba(241,90,35,0.4), inset 0 1px 1px rgba(255,255,255,0.25) !important; 
+}
+.btn-primary:hover { 
+    background: linear-gradient(135deg, #FF6F3B 0%, #A22B07 55%, #380D02 100%) !important; 
+    border-color: rgba(255,255,255,0.32) !important; 
+    transform: translateY(-2px); 
+    box-shadow: 0 8px 28px rgba(241,90,35,0.5), inset 0 1px 1px rgba(255,255,255,0.35) !important; 
+}
 /* ─── BENCHMARK ─── */
 .benchmark-section{padding:64px 0;position:relative}
 .benchmark-eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 18px;background:rgba(241,90,35,.12);border:1px solid rgba(241,90,35,.35);border-radius:999px;color:#FB923C;font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px}
