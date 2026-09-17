@@ -12,12 +12,20 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="onirafly.css">
     <style>
+:root {
+    --color-primary: #F15A23 !important;
+    --color-primary-hover: #D94914 !important;
+    --color-accent-amber: #FB923C !important;
+}
 body{overflow-x:hidden}
+.text-orange { color: #F15A23 !important; }
+.btn-primary { background: #F15A23 !important; color: #FFF !important; border-color: #F15A23 !important; box-shadow: 0 4px 20px rgba(241,90,35,0.35) !important; }
+.btn-primary:hover { background: #D94914 !important; border-color: #D94914 !important; transform: translateY(-2px); }
 /* ─── BENCHMARK ─── */
 .benchmark-section{padding:64px 0;position:relative}
-.benchmark-eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 18px;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.35);border-radius:999px;color:#FBBF24;font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px}
+.benchmark-eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 18px;background:rgba(241,90,35,.12);border:1px solid rgba(241,90,35,.35);border-radius:999px;color:#FB923C;font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px}
 .benchmark-headline{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:900;color:#F8FAFC;line-height:1.2;letter-spacing:-.02em;margin-bottom:10px}
-.benchmark-headline span{color:#F59E0B}
+.benchmark-headline span{color:#F15A23}
 .benchmark-sub{font-size:1rem;color:#94A3B8;max-width:600px;line-height:1.65;margin-bottom:40px}
 .benchmark-cards-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 @media(max-width:900px){.benchmark-cards-grid{grid-template-columns:repeat(2,1fr)}}
@@ -25,14 +33,14 @@ body{overflow-x:hidden}
 .bm-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px 20px;position:relative;overflow:hidden;transition:transform .2s,border-color .2s}
 .bm-card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.16)}
 .bm-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;border-radius:16px 16px 0 0}
-.bm-card--warning::before{background:linear-gradient(90deg,#F59E0B,#EF4444)}
+.bm-card--warning::before{background:linear-gradient(90deg,#F15A23,#EF4444)}
 .bm-card--neutral::before{background:linear-gradient(90deg,#6366F1,#8B5CF6)}
 .bm-card--success::before{background:linear-gradient(90deg,#10B981,#059669)}
-.bm-card--gold::before{background:linear-gradient(90deg,#F59E0B,#D97706)}
+.bm-card--gold::before{background:linear-gradient(90deg,#F15A23,#D97706)}
 .bm-label{font-family:'JetBrains Mono',monospace;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#64748B;display:block;margin-bottom:12px}
-.bm-card--warning .bm-label{color:#F59E0B}.bm-card--neutral .bm-label{color:#818CF8}.bm-card--success .bm-label{color:#34D399}.bm-card--gold .bm-label{color:#FCD34D}
+.bm-card--warning .bm-label{color:#FB923C}.bm-card--neutral .bm-label{color:#818CF8}.bm-card--success .bm-label{color:#34D399}.bm-card--gold .bm-label{color:#FED7AA}
 .bm-value{font-family:'Plus Jakarta Sans',sans-serif;font-size:2rem;font-weight:900;line-height:1;letter-spacing:-.03em;margin-bottom:10px;color:#F8FAFC}
-.bm-card--warning .bm-value{color:#FBBF24}.bm-card--success .bm-value{color:#34D399}.bm-card--gold .bm-value{color:#FCD34D}
+.bm-card--warning .bm-value{color:#FB923C}.bm-card--success .bm-value{color:#34D399}.bm-card--gold .bm-value{color:#FED7AA}
 .bm-desc{font-size:.83rem;color:#94A3B8;line-height:1.55}
 /* ─── LAYOUT ─── */
 .proposta-canais-section{padding:0 0 64px 0}
@@ -42,8 +50,8 @@ body{overflow-x:hidden}
 @media(max-width:900px){.proposta-micrometrics{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.proposta-micrometrics{grid-template-columns:1fr}}
 .pmm-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:20px;transition:border-color .2s,transform .2s}
-.pmm-card:hover{border-color:rgba(245,158,11,.3);transform:translateY(-3px)}
-.pmm-icon{width:40px;height:40px;background:rgba(245,158,11,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:#F59E0B}
+.pmm-card:hover{border-color:rgba(241,90,35,.3);transform:translateY(-3px)}
+.pmm-icon{width:40px;height:40px;background:rgba(241,90,35,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:#F15A23}
 .pmm-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:.92rem;font-weight:800;color:#F8FAFC;margin-bottom:6px}
 .pmm-desc{font-size:.82rem;color:#94A3B8;line-height:1.55}
 /* ─── CANAIS ─── */
@@ -55,36 +63,42 @@ body{overflow-x:hidden}
 @media(max-width:680px){.proposta-channels-grid{grid-template-columns:1fr}}
 .pch-col{padding:24px;border-right:1px solid rgba(255,255,255,.06)}
 .pch-col:last-child{border-right:none}
-.pch-col--own{background:rgba(245,158,11,.04)}
+.pch-col--own{background:rgba(241,90,35,.04)}
 .pch-icon{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
 .pch-icon--counter{background:rgba(16,185,129,.15);color:#10B981}
 .pch-icon--mkt{background:rgba(249,115,22,.15);color:#F97316}
-.pch-icon--own{background:rgba(245,158,11,.15);color:#F59E0B}
+.pch-icon--own{background:rgba(241,90,35,.15);color:#F15A23}
 .pch-tag{font-family:'JetBrains Mono',monospace;font-size:.65rem;font-weight:700;color:#475569;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:4px}
 .pch-name{font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:800;color:#F8FAFC;margin-bottom:12px}
 .pch-stat{display:inline-block;padding:4px 12px;border-radius:999px;font-size:.78rem;font-weight:800;margin-bottom:12px}
 .pch-stat--green{background:rgba(16,185,129,.15);color:#34D399}
 .pch-stat--amber{background:rgba(245,158,11,.15);color:#FBBF24}
-.pch-stat--gold{background:rgba(245,158,11,.2);color:#F59E0B;border:1px solid rgba(245,158,11,.3)}
+.pch-stat--gold{background:rgba(241,90,35,.2);color:#F15A23;border:1px solid rgba(241,90,35,.3)}
 .pch-role-label{font-size:.72rem;font-weight:700;color:#475569;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:4px}
 .pch-role-desc{font-size:.82rem;color:#94A3B8;line-height:1.55;margin-bottom:12px}
 .pch-pill{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:600;color:#64748B}
-.pch-col--own .pch-pill{color:#FBBF24}
-/* ─── INVESTIMENTO ─── */
+.pch-col--own .pch-pill{color:#FB923C}
+/* ─── INVESTIMENTO (800 + 100 + 300) ─── */
 .investimento-section{padding:64px 0}
-.inv-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:20px}
-@media(max-width:680px){.inv-grid{grid-template-columns:1fr}}
-.inv-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:32px;position:relative;overflow:hidden}
-.inv-card--main{border-color:rgba(245,158,11,.35);background:rgba(245,158,11,.04)}
-.inv-card--upsell{border-color:rgba(139,92,246,.35);background:rgba(139,92,246,.04)}
-.inv-label{font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#F59E0B;display:block;margin-bottom:8px}
-.inv-card--upsell .inv-label{color:#A78BFA}
-.inv-total{font-family:'Plus Jakarta Sans',sans-serif;font-size:2.4rem;font-weight:900;color:#F8FAFC;letter-spacing:-.03em;line-height:1.1;margin-bottom:6px}
-.inv-sub{font-size:.85rem;color:#64748B;margin-bottom:22px}
-.inv-item{display:flex;align-items:flex-start;gap:12px;padding:14px 0;border-top:1px solid rgba(255,255,255,.06);font-size:.88rem;color:#CBD5E1;line-height:1.5}
-.inv-item i{color:#F59E0B;flex-shrink:0;margin-top:2px}
-.inv-card--upsell .inv-item i{color:#A78BFA}
-.inv-upsell-tag{position:absolute;top:20px;right:20px;background:#7C3AED;color:#FFF;font-size:.68rem;font-weight:800;padding:4px 10px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
+.inv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:960px){.inv-grid{grid-template-columns:1fr}}
+.inv-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:30px 24px;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.inv-card--setup{border-color:rgba(241,90,35,.45);background:linear-gradient(180deg,rgba(241,90,35,.08) 0%,rgba(255,255,255,.02) 100%)}
+.inv-card--gestao{border-color:rgba(16,185,129,.35);background:linear-gradient(180deg,rgba(16,185,129,.06) 0%,rgba(255,255,255,.02) 100%)}
+.inv-card--google{border-color:rgba(66,133,244,.35);background:linear-gradient(180deg,rgba(66,133,244,.06) 0%,rgba(255,255,255,.02) 100%)}
+.inv-label{font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#FB923C;display:block;margin-bottom:8px}
+.inv-card--gestao .inv-label{color:#34D399}
+.inv-card--google .inv-label{color:#60A5FA}
+.inv-total{font-family:'Plus Jakarta Sans',sans-serif;font-size:2.2rem;font-weight:900;color:#F8FAFC;letter-spacing:-.03em;line-height:1.1;margin-bottom:6px}
+.inv-sub{font-size:.85rem;color:#94A3B8;margin-bottom:20px}
+.inv-features{list-style:none;padding:0;margin:0 0 20px 0;display:flex;flex-direction:column;gap:12px;flex:1}
+.inv-item{display:flex;align-items:flex-start;gap:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.06);font-size:.86rem;color:#CBD5E1;line-height:1.5}
+.inv-item i{color:#F15A23;flex-shrink:0;margin-top:2px}
+.inv-card--gestao .inv-item i{color:#10B981}
+.inv-card--google .inv-item i{color:#60A5FA}
+.inv-upsell-tag{position:absolute;top:18px;right:18px;background:rgba(241,90,35,0.2);color:#FB923C;border:1px solid rgba(241,90,35,0.4);font-size:.68rem;font-weight:800;padding:3px 10px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
+.inv-upsell-tag.green{background:rgba(16,185,129,0.2);color:#34D399;border-color:rgba(16,185,129,0.4)}
+.inv-upsell-tag.blue{background:rgba(66,133,244,0.2);color:#93C5FD;border-color:rgba(66,133,244,0.4)}
 /* ─── CTA ─── */
 .proposta-cta-section{padding:64px 0 80px}
 .proposta-cta-box{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:56px 40px;text-align:center;position:relative;overflow:hidden}
@@ -155,7 +169,9 @@ body{overflow-x:hidden}
                             Cardapio interativo de alta velocidade, pedidos diretos no WhatsApp e dominio proprio da sua marca.
                         </p>
                         <div class="hero-cta-group">
-                            <a href="#benchmark" class="btn btn-primary btn-xl"><span>Ver Oportunidade do Mercado &rarr;</span></a>
+                            <a href="index.html" class="btn btn-primary btn-xl">
+                                <i data-lucide="eye" class="btn-icon"></i><span>Testar Cardápio ao Vivo &rarr;</span>
+                            </a>
                             <a href="#canais" class="btn btn-secondary btn-xl">
                                 <i data-lucide="layers" class="btn-icon"></i><span>Arquitetura de Canais</span>
                             </a>
@@ -283,33 +299,67 @@ body{overflow-x:hidden}
 
         <hr class="prop-divider">
 
-        <!-- INVESTIMENTO -->
+        <!-- INVESTIMENTO (800 + 100 + 300) -->
         <section class="investimento-section" id="investimento">
             <div class="section-container">
                 <div class="eyebrow-pill" style="margin-bottom:24px">
-                    <span class="pulse-dot"></span><span>INVESTIMENTO &amp; CONDICOES</span>
+                    <span class="pulse-dot"></span><span>CONDIÇÕES COMERCIAIS &bull; ONIRA.FLY</span>
                 </div>
                 <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;color:#F8FAFC;letter-spacing:-.02em;margin-bottom:32px">
-                    Um canal que se paga no <span class="text-orange">primeiro mes de retencao.</span>
+                    Estrutura de investimento <span class="text-orange">clara e sem surpresas.</span>
                 </h2>
                 <div class="inv-grid">
-                    <div class="inv-card inv-card--main">
-                        <span class="inv-label">&#11088; OFERTA PRINCIPAL &bull; ONIRA.FLY</span>
-                        <div class="inv-total">R$ 1.000</div>
-                        <div class="inv-sub">Setup + implementacao completa do canal</div>
-                        <div class="inv-item"><i data-lucide="check-circle-2" style="width:16px;height:16px"></i><span><strong>Cardapio interativo completo</strong> &mdash; produtos, fotos, combos e opcionais da sua casa cadastrados.</span></div>
-                        <div class="inv-item"><i data-lucide="globe" style="width:16px;height:16px"></i><span><strong>Dominio proprio oficial</strong> &mdash; registro em nome da sua empresa com autoridade maxima no Google.</span></div>
-                        <div class="inv-item"><i data-lucide="message-square" style="width:16px;height:16px"></i><span><strong>Disparo direto no WhatsApp</strong> &mdash; comanda mastigada no numero oficial, pronta para a cozinha.</span></div>
-                        <div class="inv-item"><i data-lucide="server" style="width:16px;height:16px"></i><span><strong>Hospedagem + SSL + suporte: R$ 100/mes</strong> &mdash; servidor, certificado e suporte continuo.</span></div>
+                    <!-- CARD 1: SETUP 3x 800 -->
+                    <div class="inv-card inv-card--setup">
+                        <span class="inv-upsell-tag">Setup Master</span>
+                        <span class="inv-label">IMPLANTAÇÃO &bull; CANAL PRÓPRIO</span>
+                        <div class="inv-total">3x R$ 800</div>
+                        <div class="inv-sub">ou R$ 2.400 à vista via Pix</div>
+                        <ul class="inv-features">
+                            <li class="inv-item"><i data-lucide="check-circle-2" style="width:16px;height:16px"></i><span><strong>Cardápio interativo completo</strong> &mdash; 84 itens, combos e opcionais cadastrados.</span></li>
+                            <li class="inv-item"><i data-lucide="smartphone" style="width:16px;height:16px"></i><span><strong>1ª dobra imediata no catálogo</strong> &mdash; zero hero corporativo poluído e sem atrito.</span></li>
+                            <li class="inv-item"><i data-lucide="shopping-bag" style="width:16px;height:16px"></i><span><strong>Carrinho unificado dark</strong> &mdash; rolagem contínua e checkout em 2 toques.</span></li>
+                            <li class="inv-item"><i data-lucide="message-square" style="width:16px;height:16px"></i><span><strong>Comanda direta no WhatsApp</strong> &mdash; formatada para impressão ou tela da cozinha.</span></li>
+                            <li class="inv-item"><i data-lucide="globe" style="width:16px;height:16px"></i><span><strong>Domínio próprio oficial</strong> &mdash; autoridade máxima no Google e redes sociais.</span></li>
+                        </ul>
+                        <a href="https://wa.me/5554996862169?text=Ol%C3%A1%20Jefferson!%20Aprovamos%20o%20canal%20Onira.fly%20da%20Soulshi%20(3x%20800%20%2B%20100%2Fm%C3%AAs)." class="btn btn-primary" target="_blank" rel="noopener" style="margin-top:auto;width:100%;text-align:center;">
+                            <span>Aprovar Implantação &bull; 3x R$ 800</span>
+                        </a>
                     </div>
-                    <div class="inv-card inv-card--upsell">
-                        <span class="inv-upsell-tag">&#128640; Opcional</span>
-                        <span class="inv-label">ACELERADOR LOCAL</span>
-                        <div class="inv-total" style="color:#A78BFA">+ R$ 100/mes</div>
-                        <div class="inv-sub">(nos 3 primeiros meses)</div>
-                        <div class="inv-item"><i data-lucide="map-pin" style="width:16px;height:16px"></i><span>Otimizacao completa do Google Meu Negocio e perfil no Maps.</span></div>
-                        <div class="inv-item"><i data-lucide="image" style="width:16px;height:16px"></i><span>Estruturacao de fotos, categorias e palavras-chave de busca local.</span></div>
-                        <div class="inv-item"><i data-lucide="trending-up" style="width:16px;height:16px"></i><span>Indexacao prioritaria para buscas como "delivery perto de mim".</span></div>
+
+                    <!-- CARD 2: GESTÃO & NUVEM 100/mês -->
+                    <div class="inv-card inv-card--gestao">
+                        <span class="inv-upsell-tag green">Recorrente</span>
+                        <span class="inv-label">GESTÃO DO CATÁLOGO & NUVEM</span>
+                        <div class="inv-total" style="color:#34D399">R$ 100<span style="font-size:1rem;color:#94A3B8;font-weight:600">/mês</span></div>
+                        <div class="inv-sub">Inicia somente após a entrega e validação</div>
+                        <ul class="inv-features">
+                            <li class="inv-item"><i data-lucide="check" style="width:16px;height:16px"></i><span><strong>Edição contínua do cardápio</strong> &mdash; inclusão de pratos sazonais e alteração de preços.</span></li>
+                            <li class="inv-item"><i data-lucide="server" style="width:16px;height:16px"></i><span><strong>Hospedagem em nuvem ultra-rápida</strong> &mdash; carregamento em menos de 1,2s.</span></li>
+                            <li class="inv-item"><i data-lucide="shield-check" style="width:16px;height:16px"></i><span><strong>Certificado SSL dedicado</strong> &mdash; navegação segura e blindada.</span></li>
+                            <li class="inv-item"><i data-lucide="life-buoy" style="width:16px;height:16px"></i><span><strong>Suporte técnico prioritário</strong> direto com o especialista no WhatsApp.</span></li>
+                            <li class="inv-item"><i data-lucide="unlock" style="width:16px;height:16px"></i><span><strong>Sem fidelidade anual contratual</strong> &mdash; pause no mês que desejar.</span></li>
+                        </ul>
+                        <div style="margin-top:auto;padding:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;text-align:center;font-size:0.8rem;color:#94A3B8">
+                            Incluso junto com a implantação do canal
+                        </div>
+                    </div>
+
+                    <!-- CARD 3: ACELERADOR GOOGLE ADS 300/mês -->
+                    <div class="inv-card inv-card--google">
+                        <span class="inv-upsell-tag blue">Acelerador</span>
+                        <span class="inv-label">TRÁFEGO PAGO &bull; GOOGLE ADS</span>
+                        <div class="inv-total" style="color:#93C5FD">R$ 300<span style="font-size:1rem;color:#94A3B8;font-weight:600">/mês</span></div>
+                        <div class="inv-sub">Fee de gestão estratégica e otimização contínua</div>
+                        <ul class="inv-features">
+                            <li class="inv-item"><i data-lucide="target" style="width:16px;height:16px"></i><span><strong>Campanha pronta p/ rodar</strong> &mdash; foco em <em>"delivery sushi caxias"</em> e bairros nobres.</span></li>
+                            <li class="inv-item"><i data-lucide="zap" style="width:16px;height:16px"></i><span><strong>Cliques direto no WhatsApp/Cardápio</strong> &mdash; sem passar por intermediários.</span></li>
+                            <li class="inv-item"><i data-lucide="credit-card" style="width:16px;height:16px"></i><span><strong>Autonomia no crédito de mídia</strong> &mdash; você paga o boleto direto ao Google com o valor que quiser.</span></li>
+                            <li class="inv-item"><i data-lucide="bar-chart-2" style="width:16px;height:16px"></i><span><strong>Relatório mensal de conversões</strong> e blindagem contra cliques inválidos.</span></li>
+                        </ul>
+                        <a href="https://wa.me/5554996862169?text=Ol%C3%A1%20Jefferson!%20Quero%20ativar%20a%20campanha%20Google%20Ads%20(fee%20R%24%20300)%20para%20a%20Soulshi." class="btn btn-secondary" target="_blank" rel="noopener" style="margin-top:auto;width:100%;text-align:center;">
+                            <span>Ativar Google Ads &bull; R$ 300/mês</span>
+                        </a>
                     </div>
                 </div>
             </div>
