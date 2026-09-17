@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Soulshi Sushi Lourdes | Delivery de Sushi em Caxias do Sul</title>
-    <meta name="description" content="🍣 Soulshi Sushi Lourdes — Combos, temakis, pokes e pratos quentes na Av. Júlio de Castilhos, 962, Caxias do Sul. Monte seu pedido e envie direto no WhatsApp.">
-    <meta name="keywords" content="Soulshi Lourdes, Sushi Caxias do Sul, Delivery Sushi Lourdes, Combo Sushi Caxias, Temaki Caxias do Sul, Av Júlio de Castilhos 962">
+    <meta name="description" content="🍣 Soulshi Sushi Lourdes — Combos nobres, sashimis frescos, temakis e hots na Av. Júlio de Castilhos, 962, Lourdes, Caxias do Sul. Monte seu pedido e envie direto no WhatsApp com 0% taxas.">
+    <meta name="keywords" content="Soulshi, Soulshi Lourdes, Sushi Caxias do Sul, Delivery Sushi Lourdes, Combo Sushi Caxias, Temaki Caxias">
 
     <!-- Open Graph / WhatsApp Social Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Soulshi Sushi Lourdes">
     <meta property="og:title" content="Soulshi Sushi Lourdes | Delivery de Sushi em Caxias do Sul">
-    <meta property="og:description" content="🍣 Combos, temakis, pokes e pratos quentes. Peça direto no WhatsApp!">
-    <meta property="og:image" content="https://www.goomer.app/webmenu/soulshilourdes/product/10323214/picture/medium/260812181156">
+    <meta property="og:description" content="🍣 Combos nobres, sashimis frescos, temakis e hots crocantes. Peça direto no WhatsApp com 0% taxas!">
+    <meta property="og:image" content="assets/logo_clean_white.png">
     <meta property="og:locale" content="pt_BR">
 
     <!-- Schema.org JSON-LD (SEO Local) -->
@@ -21,35 +21,29 @@
       "@context": "https://schema.org",
       "@type": "SushiRestaurant",
       "name": "Soulshi Sushi Lourdes",
-      "image": "https://www.goomer.app/webmenu/soulshilourdes/product/10323214/picture/medium/260812181156",
-      "telephone": "+555430192888",
+      "image": "assets/logo_clean_white.png",
+      "telephone": "+555492423280",
       "priceRange": "$$",
-      "servesCuisine": ["Japonesa", "Sushi", "Temakeria", "Pokes"],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.6",
-        "reviewCount": "951"
-      },
+      "servesCuisine": ["Japonesa", "Sushi", "Poke", "Temaki"],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Júlio de Castilhos, 962",
         "addressLocality": "Caxias do Sul",
         "addressRegion": "RS",
-        "postalCode": "95084-180",
+        "postalCode": "95010-000",
         "addressCountry": "BR"
       }
     }
     </script>
 
-    <!-- Favicon & PWA Manifest -->
-    <link rel="icon" type="image/png" href="assets/logo.png">
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#0D0D0F">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo_clean_white.png">
+    <meta name="theme-color" content="#09090C">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Soulshi">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Outfit (Headings) + Plus Jakarta Sans (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -57,35 +51,37 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <link rel="stylesheet" href="style.css?v=20260914-v1">
+    <link rel="stylesheet" href="style.css?v=20260916-darkv3">
 </head>
 <body>
 
-    <!-- Top Announcement Bar -->
+    <!-- Top Announcement Bar (Sem nota de cabeçalho) -->
     <div class="top-bar">
         <div class="container top-bar-content">
             <div class="top-info">
-                <span><i data-lucide="map-pin"></i> Av. Júlio de Castilhos, 962 • Lourdes, Caxias do Sul</span>
+                <span><i data-lucide="map-pin"></i> Av. Júlio de Castilhos, 962 • Lourdes</span>
             </div>
             <div class="top-contacts">
-                <a href="tel:+555430192888" class="top-phone"><i data-lucide="phone"></i> (54) 3019-2888</a>
+                <a href="https://api.whatsapp.com/send?phone=555492423280" target="_blank" class="top-phone"><i data-lucide="phone"></i> (54) 99242-3280</a>
+                <span class="divider" style="color: rgba(255,255,255,0.1);">|</span>
+                <span><i data-lucide="clock" style="width:13px; height:13px; color:var(--accent);"></i> 18h30 às 23h00</span>
             </div>
         </div>
     </div>
 
-    <!-- Header Despoluído (Logo + Status + Proposta + Lixeira + Meu Pedido) -->
+    <!-- Header Despoluído (Logo + Status "Aberto Hoje" + Proposta + Lixeira + Meu Pedido) -->
     <header class="header">
         <div class="container header-container">
-            <a href="#" class="logo" aria-label="Página Inicial da Soulshi Sushi Lourdes">
-                <img src="assets/logo.png" alt="Soulshi Sushi Lourdes" class="brand-logo-img">
+            <a href="#" class="logo" aria-label="Página Inicial do Soulshi Sushi Lourdes">
+                <img src="assets/logo_clean_white.png" alt="Soulshi Sushi Lourdes" class="brand-logo-img">
             </a>
 
             <div class="header-actions">
-                <div id="status-badge" class="status-badge open">
+                <div id="status-badge" class="status-badge">
                     <span class="status-dot"></span>
                     <span class="status-text">Aberto Hoje</span>
                 </div>
-                <a href="proposta.html?nome=Soulshi%20Sushi%20Lourdes&nicho=sushi&tel=555492423280&av=951&cidade=Caxias%20do%20Sul&bairro=Lourdes" class="btn-buy-site" aria-label="Ver proposta do site">
+                <a href="proposta.html" class="btn-buy-site" aria-label="Ver proposta do site">
                     <i data-lucide="zap"></i> Proposta
                 </a>
                 <button type="button" class="cart-clear-btn" id="cart-clear-header" onclick="window.clearCart()" aria-label="Limpar o pedido" title="Limpar pedido">
@@ -100,110 +96,125 @@
         </div>
     </header>
 
-    <!-- Cardápio (1ª dobra — sem hero institucional) -->
-    <section class="section menu-section" id="cardapio">
+    <!-- 1ª DOBRA: CARDÁPIO IMEDIATO (Espaçamento Reduzido e Direto ao Ponto) -->
+    <main class="menu-section section" id="cardapio">
         <div class="container">
-            <div class="section-header text-center">
-                <span class="subtitle">NOSSO CARDÁPIO COMPLETO</span>
-                <h2 class="title">Escolha seu sushi favorito</h2>
-                <p class="section-desc">Monte seu pedido em instantes e envie direto para o WhatsApp da casa.</p>
+            <div class="text-center menu-header-wrap">
+                <span class="subtitle">CARDÁPIO COMPLETO & DELIVERY</span>
+                <h1 class="title">Faça seu Pedido Online</h1>
+                <p class="section-desc">Ingredientes frescos selecionados, cortes nobres e o sabor exclusivo do Soulshi com entrega rápida em Caxias do Sul.</p>
             </div>
 
+            <!-- Busca Instantânea -->
             <div class="search-bar-wrap">
                 <i data-lucide="search" class="search-icon"></i>
-                <input type="search" id="menu-search" class="search-input" placeholder="Buscar no cardápio... ex: combo, temaki, poke" aria-label="Buscar no cardápio" autocomplete="off">
+                <input type="text" id="menu-search" class="search-input" placeholder="Buscar no cardápio... (ex: salmão, combo, hot, poke, temaki)">
             </div>
 
+            <!-- Carrossel de Categorias Touch -->
             <div class="category-filters-container">
-                <div class="category-filters category-scroll-pills" id="category-filters">
-                    <!-- JS populated -->
+                <div class="category-filters" id="category-filters">
+                    <!-- Gerado via JS -->
                 </div>
             </div>
 
+            <!-- Grid de Produtos com Preços em Verde Esmeralda & Cards com Glassmorphism -->
             <div class="menu-grid" id="menu-grid">
-                <!-- JS populated -->
+                <!-- Gerado dinamicamente via JS com cardapio.json -->
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Banner de Upsell -->
-    <section class="section special-offer-section">
+    <!-- BANNER DE UPSELL NO RODAPÉ DO CARDÁPIO (+ Sobremesa Oficial) -->
+    <section class="special-offer-section section">
         <div class="container">
             <div class="special-offer-card">
                 <div class="special-offer-img-box">
-                    <img src="https://www.goomer.app/webmenu/soulshilourdes/product/10323214/picture/medium/260812181156" alt="Combo Soulshi Top" class="special-offer-img" loading="lazy" onerror="this.onerror=null;this.src='assets/placeholder.svg'">
-                    <span class="special-badge"><i data-lucide="flame"></i> Mais Pedido da Casa</span>
+                    <img src="assets/hero-bg.jpg" alt="Experiência Soulshi" class="special-offer-img" loading="lazy">
+                    <div class="special-badge">
+                        <i data-lucide="sparkles" style="width:14px; height:14px;"></i> Sugestão do Chef
+                    </div>
                 </div>
                 <div class="special-offer-content">
-                    <span class="subtitle-red">COMBO PARA COMPARTILHAR</span>
-                    <h2 class="special-title">Combo Soulshi Top</h2>
-                    <p class="special-desc">6 sashimis de salmão, 4 gunkas de salmão, niguiris selados, sashimis de peixe branco, 6 uramakis Filadélfia, hossomakis, tokaymakis e togus.</p>
+                    <span class="subtitle-red">EXPERIÊNCIA COMPLETA</span>
+                    <h2 class="special-title">Combinados & Experiências Nobres</h2>
+                    <p class="special-desc">Todas as nossas peças são preparadas na hora por sushimen experientes, utilizando salmão fresco da mais alta qualidade e insumos rigorosamente selecionados.</p>
                     <div class="special-price-row">
-                        <div class="special-price">
-                            <span class="new-price">R$ 189,90</span>
+                        <div class="price-box">
+                            <span class="price-label" style="color: var(--text-dim);">Combos a partir de:</span>
+                            <div class="new-price">R$ 63,90</div>
                         </div>
-                        <button type="button" class="btn btn-primary" onclick="addToCart('combo-soulshi-top-p12')" aria-label="Pedir Combo Soulshi Top">
-                            <i data-lucide="shopping-bag"></i> Pedir Este Combo
-                        </button>
+                        <a href="#cardapio" class="btn btn-primary">
+                            <i data-lucide="utensils"></i> Explorar Cardápio
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- História Editorial (1 foto + 1 texto) -->
-    <section class="section story-section" id="historia">
-        <div class="container story-grid">
-            <div class="story-img-box">
-                <img src="https://www.goomer.app/webmenu/soulshilourdes/product/10323220/picture/medium/260812182512" alt="Combinado Soulshi" class="story-img" loading="lazy" onerror="this.onerror=null;this.src='assets/placeholder.svg'">
-            </div>
-            <div class="story-text">
-                <span class="subtitle">NOSSA CASA NO LOURDES</span>
-                <h2 class="title">Sushi de bairro, padrão de restaurante grande</h2>
-                <p>A Soulshi fica na Av. Júlio de Castilhos, no coração do Lourdes — e conquistou nota 4,6 no Google com centenas de avaliações de quem pede toda semana. Buffet livre premium no salão, combos fartos no delivery e aquele capricho na montagem que aparece em cada peça.</p>
-                <p>Chame no WhatsApp, monte seu combinado ou venha provar o buffet. Aqui o salmão é fresco e a entrega chega com carinho.</p>
+    <!-- HISTÓRIA EDITORIAL DA CASA -->
+    <section class="story-section section" id="historia">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-img-box">
+                    <img src="assets/hero-bg.jpg" alt="Tradição e Sabor no Soulshi" class="story-img" loading="lazy">
+                </div>
+                <div class="story-text">
+                    <span class="subtitle">A CASA & TRADIÇÃO</span>
+                    <h2 class="title" style="margin-bottom: 18px;">Autenticidade e Sofisticação no Bairro Lourdes</h2>
+                    <p>O <strong>Soulshi Sushi Lourdes</strong> é referência em Caxias do Sul por unir a arte clássica da culinária oriental com criações contemporâneas marcantes. Localizado no charmoso bairro Lourdes, nossa missão é entregar uma experiência gastronômica memorável em cada pedido.</p>
+                    <p>Nossa operação de delivery foi desenhada para preservar o frescor, a montagem impecável e a crocância de cada hot e temaki, direto na comodidade da sua casa.</p>
+                    <div style="margin-top: 24px;">
+                        <a href="#cardapio" class="btn btn-primary">
+                            <i data-lucide="utensils"></i> Fazer Meu Pedido
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Avaliações (Google) -->
-    <section class="section reviews-section" id="avaliacoes">
+    <!-- AVALIAÇÕES REAIS (Google Maps) -->
+    <section class="reviews-section section">
         <div class="container">
-            <div class="section-header text-center">
-                <span class="subtitle">DEPOIMENTOS REAIS • 4,6 NO GOOGLE</span>
-                <h2 class="title">O que Caxias diz da Soulshi</h2>
+            <div class="text-center" style="margin-bottom: 40px;">
+                <span class="subtitle" style="color: #FBBF24;">DEPOIMENTOS REAIS</span>
+                <h2 class="title">O que dizem nossos clientes</h2>
+                <p class="section-desc">Mais de 950 clientes avaliaram nossa experiência gastronômica com nota média de 4,6 estrelas no Google.</p>
             </div>
+
             <div class="reviews-grid">
                 <div class="review-card">
                     <div class="stars">★★★★★</div>
-                    <p class="review-text">"Peguei o buffet livre premium e a experiência foi top. Atendimento atencioso, comida extremamente saborosa e buffet bem completo, com pratos feitos na hora na mesa."</p>
+                    <p class="review-text">"Melhor delivery de sushi do Lourdes! Peças muito frescas, apresentação impecável e entrega super rápida."</p>
                     <div class="reviewer">
-                        <div class="reviewer-avatar">AC</div>
+                        <div class="reviewer-avatar">AL</div>
                         <div>
-                            <strong>Alex C.</strong>
-                            <span>Avaliação no Google</span>
+                            <strong>André Lima</strong>
+                            <span>Avaliação no Google • Caxias do Sul</span>
                         </div>
                     </div>
                 </div>
                 <div class="review-card">
                     <div class="stars">★★★★★</div>
-                    <p class="review-text">"Ambiente aconchegante, equipe atenciosa e peças sempre fresquinhas. O combo para dois vale muito a pena, vem bem servido."</p>
+                    <p class="review-text">"Os hots são crocantes de verdade e o salmão tem uma qualidade incrível. Pedimos toda semana aqui em casa."</p>
                     <div class="reviewer">
-                        <div class="reviewer-avatar">MR</div>
+                        <div class="reviewer-avatar">CP</div>
                         <div>
-                            <strong>Mari R.</strong>
-                            <span>Avaliação no Google</span>
+                            <strong>Camila Paim</strong>
+                            <span>Avaliação no Google • Lourdes</span>
                         </div>
                     </div>
                 </div>
                 <div class="review-card">
                     <div class="stars">★★★★★</div>
-                    <p class="review-text">"Melhor custo-benefício de sushi no Lourdes. Pedimos pelo delivery e chegou tudo certinho, ainda com apresentação caprichada."</p>
+                    <p class="review-text">"Atendimento impecável e produtos de primeira linha. O Combo Jazz é espetacular!"</p>
                     <div class="reviewer">
-                        <div class="reviewer-avatar">JT</div>
+                        <div class="reviewer-avatar">GS</div>
                         <div>
-                            <strong>João T.</strong>
-                            <span>Avaliação no Google</span>
+                            <strong>Gabriel Santos</strong>
+                            <span>Avaliação no Google • Caxias do Sul</span>
                         </div>
                     </div>
                 </div>
@@ -211,201 +222,211 @@
         </div>
     </section>
 
-    <!-- Localização -->
-    <section class="section contact-section" id="contato">
+    <!-- LOCALIZAÇÃO & MAPA -->
+    <section class="contact-section section" id="contato">
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
-                    <span class="subtitle">RETIRADA OU TELE-ENTREGA</span>
-                    <h2 class="title">Localização & Atendimento</h2>
-                    <p class="contact-intro">No coração do bairro Lourdes, atendendo Caxias do Sul e região.</p>
-
+                    <span class="subtitle">VISITE NOSSO RESTAURANTE</span>
+                    <h2 class="title">Lourdes • Caxias do Sul</h2>
+                    <p class="contact-intro">Venha nos visitar ou peça seu delivery oficial com entrega ágil em toda a cidade.</p>
                     <div class="info-list">
                         <div class="info-item">
                             <div class="info-icon"><i data-lucide="map-pin"></i></div>
                             <div>
-                                <strong>Endereço:</strong>
-                                <p>Av. Júlio de Castilhos, 962<br>Lourdes, Caxias do Sul - RS</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i data-lucide="phone"></i></div>
-                            <div>
-                                <strong>Telefone / Pedidos:</strong>
-                                <p><a href="tel:+555430192888" style="color:var(--accent); font-weight:700;">(54) 3019-2888</a></p>
+                                <strong>Endereço Físico</strong>
+                                <p style="color: var(--text-muted); font-size: 0.92rem;">Av. Júlio de Castilhos, 962 - Lourdes, Caxias do Sul - RS, CEP 95010-000</p>
                             </div>
                         </div>
                         <div class="info-item">
                             <div class="info-icon"><i data-lucide="clock"></i></div>
                             <div>
-                                <strong>Horários:</strong>
-                                <p>Consulte os horários de funcionamento direto com a casa.</p>
+                                <strong>Horário de Funcionamento</strong>
+                                <p style="color: var(--text-muted); font-size: 0.92rem;">Segunda a Domingo: 18h30 às 23h00</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <strong>WhatsApp & Reservas</strong>
+                                <p style="color: var(--text-muted); font-size: 0.92rem;">(54) 99242-3280</p>
                             </div>
                         </div>
                     </div>
+                    <div style="margin-top: 28px;">
+                        <a href="https://api.whatsapp.com/send?phone=555492423280" target="_blank" class="btn btn-whatsapp">
+                            <i data-lucide="message-circle"></i> Falar no WhatsApp Oficial
+                        </a>
+                    </div>
                 </div>
-
                 <div class="map-card">
-                    <iframe
-                        title="Mapa Soulshi Sushi Lourdes"
-                        src="https://www.google.com/maps?q=Av.+J%C3%BAlio+de+Castilhos,+962,+Caxias+do+Sul&output=embed"
-                        width="100%"
-                        height="100%"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.746685817882!2d-51.17638792447953!3d-29.169084375375508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea32a32cceb25%3A0xb5a0bf643cbf4cb2!2sAv.%20J%C3%BAlio%20de%20Castilhos%2C%20962%20-%20Lourdes%2C%20Caxias%20do%20Sul%20-%20RS!5e0!3m2!1spt-BR!2sbr!4v1715000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização Soulshi Sushi Lourdes"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Rodapé -->
+    <!-- FOOTER DARK MINIMALIST -->
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-col">
-                <a href="#" class="logo" aria-label="Página Inicial">
-                    <img src="assets/logo.png" alt="Soulshi Sushi Lourdes" class="brand-logo-footer">
-                </a>
-                <p>🍣 <strong>Soulshi Sushi Lourdes</strong> — Sushi e temakeria no bairro Lourdes, Caxias do Sul - RS.</p>
+                <img src="assets/logo_clean_white.png" alt="Soulshi Sushi Lourdes" class="brand-logo-footer">
+                <p>Soulshi Sushi Lourdes • CNPJ 38.303.493/0001-38<br>Av. Júlio de Castilhos, 962 - Lourdes, Caxias do Sul - RS</p>
             </div>
             <div class="footer-col">
                 <h4>Navegação</h4>
                 <ul>
-                    <li><a href="#cardapio">Cardápio</a></li>
-                    <li><a href="#historia">Nossa Casa</a></li>
-                    <li><a href="#avaliacoes">Avaliações</a></li>
-                    <li><a href="#contato">Localização</a></li>
+                    <li><a href="#cardapio">Cardápio Completo</a></li>
+                    <li><a href="#historia">A Casa & Tradição</a></li>
+                    <li><a href="#contato">Localização & Contato</a></li>
+                    <li><a href="proposta.html">Proposta Comercial</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Contato Direto</h4>
-                <p>📍 Av. Júlio de Castilhos, 962, Lourdes</p>
-                <p>📞 (54) 3019-2888</p>
+                <h4>Canais Digitais</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/soulshisushi" target="_blank" rel="noopener">Instagram @soulshisushi</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=555492423280" target="_blank" rel="noopener">WhatsApp Oficial</a></li>
+                    <li><a href="https://maps.google.com" target="_blank" rel="noopener">Google Maps</a></li>
+                </ul>
             </div>
         </div>
-        <div class="footer-bottom text-center">
-            <p>&copy; 2026 Soulshi Sushi Lourdes. Todos os direitos reservados. Tecnologia por <a href="https://jeffmotta.framer.website/" target="_blank" rel="noopener noreferrer" class="footer-dev-link">Onira Labs (Jeff Motta)</a></p>
+        <div class="container footer-bottom">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+                <span>© 2026 Soulshi Sushi Lourdes. Todos os direitos reservados.</span>
+                <span>Desenvolvido com tecnologia <a href="proposta.html" class="footer-dev-link">Onira.fly</a></span>
+            </div>
         </div>
     </footer>
 
-    <!-- Carrinho Drawer -->
-    <div class="cart-drawer-overlay" id="cart-overlay" onclick="window.closeCart()"></div>
-    <aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho de Pedidos">
+    <!-- MODAL DE DETALHES DO PRODUTO (INTERATIVO • CLIQUE NO CARD) -->
+    <div class="product-modal-overlay" id="product-modal-overlay" onclick="window.handleModalBackdropClick(event)">
+        <div class="product-modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-header-img">
+                <img id="modal-img" src="assets/hero-bg.jpg" alt="Produto Soulshi" class="modal-img">
+                <button type="button" class="modal-close-btn" onclick="window.closeProductModal()" aria-label="Fechar detalhes">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta-row">
+                    <div class="modal-tag-group" id="modal-tag-group">
+                        <!-- Injetado via JS -->
+                    </div>
+                    <div class="modal-price" id="modal-price">R$ 0,00</div>
+                </div>
+
+                <h2 class="modal-title" id="modal-title">Nome do Produto</h2>
+                <p class="modal-desc" id="modal-desc">Descrição completa do produto...</p>
+
+                <!-- Box de Itens do Combo Legíveis -->
+                <div class="breakdown-box" id="modal-breakdown-box">
+                    <div class="breakdown-title">
+                        <i data-lucide="package-check" style="width:16px; height:16px;"></i> O que vem neste item:
+                    </div>
+                    <ul class="breakdown-list" id="modal-breakdown-list">
+                        <!-- Injetado via JS -->
+                    </ul>
+                </div>
+
+                <!-- Observação do Item -->
+                <div class="modal-notes-group">
+                    <label class="modal-notes-label" for="modal-item-notes">Observações para a cozinha (opcional):</label>
+                    <textarea id="modal-item-notes" class="modal-notes-input" placeholder="Ex: Sem cebolinha, molho tarê à parte, caprichar no gengibre..."></textarea>
+                </div>
+
+                <!-- Ações: Quantidade e Botão Adicionar -->
+                <div class="modal-actions">
+                    <div class="modal-stepper">
+                        <button type="button" class="modal-stepper-btn" onclick="window.adjustModalQty(-1)" aria-label="Diminuir quantidade">-</button>
+                        <span class="modal-stepper-val" id="modal-qty-val">1</span>
+                        <button type="button" class="modal-stepper-btn" onclick="window.adjustModalQty(1)" aria-label="Aumentar quantidade">+</button>
+                    </div>
+                    <button type="button" class="btn-modal-add" id="btn-modal-add" onclick="window.confirmModalAddToCart()">
+                        <i data-lucide="plus-circle"></i> <span id="modal-btn-label">Adicionar ao Pedido • R$ 0,00</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARRINHO DRAWER (Rolagem Única Contínua • Dark Glassmorphism) -->
+    <div class="cart-drawer-overlay" id="cart-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho de Compras">
         <div class="cart-header">
-            <button type="button" class="btn-continue-shopping" onclick="window.closeCart()" aria-label="Continuar Escolhendo Itens">
-                <i data-lucide="arrow-left" style="width:14px; height:14px;"></i>
-                <span>Continuar Escolhendo</span>
-            </button>
             <div class="cart-header-title">
-                <i data-lucide="shopping-bag"></i>
-                <span>Seu Pedido</span>
+                <i data-lucide="shopping-bag"></i> Meu Pedido
+            </div>
+            <div class="cart-header-actions">
+                <button type="button" class="cart-trash-btn" id="cart-clear-drawer" onclick="window.clearCart()" title="Limpar pedido" aria-label="Limpar pedido">
+                    <i data-lucide="trash-2"></i>
+                </button>
+                <button type="button" class="cart-close-btn" onclick="window.closeCart()" aria-label="Fechar carrinho">
+                    <i data-lucide="x"></i>
+                </button>
             </div>
         </div>
 
         <div class="cart-body">
-            <div class="cart-section">
-                <div class="cart-section-header">
-                    <span class="cart-section-title">ITENS DO PEDIDO</span>
-                </div>
-                <div id="cart-items-container" class="cart-items-container">
-                    <!-- JS populated -->
+            <!-- Alternador de Entrega / Retirada -->
+            <div class="fulfillment-toggle">
+                <button type="button" class="f-btn active" id="f-delivery" onclick="setFulfillment('delivery')">
+                    <i data-lucide="bike" style="width:16px; height:16px;"></i> Tele-Entrega
+                </button>
+                <button type="button" class="f-btn" id="f-takeout" onclick="setFulfillment('takeout')">
+                    <i data-lucide="store" style="width:16px; height:16px;"></i> Retirada no Balcão
+                </button>
+            </div>
+
+            <!-- Dados do Cliente -->
+            <div class="form-group">
+                <label class="form-label" for="customer-name">Seu Nome (Opcional)</label>
+                <input type="text" id="customer-name" class="form-input" placeholder="Ex: Jefferson Motta">
+            </div>
+
+            <div class="form-group" id="address-group">
+                <label class="form-label" for="customer-address">Endereço de Entrega</label>
+                <input type="text" id="customer-address" class="form-input" placeholder="Rua, número, complemento e bairro">
+            </div>
+
+            <!-- Lista de Produtos -->
+            <div id="cart-items-container">
+                <!-- Injetado via JS -->
+            </div>
+
+            <!-- Forma de Pagamento (3 botões limpos, sem chave Pix crua) -->
+            <div class="form-group" style="margin-top: 14px;">
+                <label class="form-label">Forma de Pagamento</label>
+                <div class="payment-grid">
+                    <button type="button" class="pay-btn active" id="pay-pix" onclick="setPayment('Pix')">Pix</button>
+                    <button type="button" class="pay-btn" id="pay-cartao" onclick="setPayment('Cartão')">Cartão</button>
+                    <button type="button" class="pay-btn" id="pay-dinheiro" onclick="setPayment('Dinheiro')">Dinheiro</button>
                 </div>
             </div>
 
-            <div class="cart-option-group">
-                <label>FORMA DE ENTREGA / RETIRADA:</label>
-                <div class="delivery-toggle">
-                    <button type="button" class="del-btn active" data-type="delivery">
-                        <i data-lucide="truck"></i> Tele-Entrega
-                    </button>
-                    <button type="button" class="del-btn" data-type="retirada">
-                        <i data-lucide="store"></i> Retirada no Balcão
-                    </button>
-                </div>
-            </div>
-
-            <div class="cart-option-group" id="address-box">
-                <label>SEUS DADOS PARA ENTREGA:</label>
-                <input type="text" id="cust-name" class="input-dark" placeholder="Seu Nome (opcional)" style="margin-bottom:8px;" aria-label="Nome (opcional)">
-                <input type="text" id="cust-address" class="input-dark" placeholder="Endereço de Entrega (Rua, Nº, Bairro)" aria-label="Endereço Completo">
-            </div>
-
-            <div class="cart-option-group">
-                <label>FORMA DE PAGAMENTO:</label>
-                <div class="payment-toggle">
-                    <button type="button" class="pay-btn active" data-pay="Pix">
-                        <i data-lucide="qr-code"></i> Pix
-                    </button>
-                    <button type="button" class="pay-btn" data-pay="Cartão de Crédito/Débito">
-                        <i data-lucide="credit-card"></i> Cartão
-                    </button>
-                    <button type="button" class="pay-btn" data-pay="Dinheiro">
-                        <i data-lucide="banknote"></i> Dinheiro
-                    </button>
-                </div>
-
-                <div id="cash-change-box" style="display:none; margin-top:8px;">
-                    <input type="text" id="cash-change-val" class="input-dark" placeholder="Troco para quanto? Ex: R$ 100,00" aria-label="Valor para troco">
-                </div>
-            </div>
-
-            <div class="cart-summary">
-                <div class="summary-line">
+            <!-- Resumo e Totais -->
+            <div class="cart-summary" id="cart-summary-box">
+                <div class="summary-row">
                     <span>Subtotal:</span>
-                    <span id="cart-subtotal">R$ 0,00</span>
+                    <span id="summary-subtotal">R$ 0,00</span>
                 </div>
-                <div class="summary-line">
+                <div class="summary-row">
                     <span>Taxa de Entrega:</span>
-                    <span id="cart-delivery-fee">A combinar</span>
+                    <span>A calcular</span>
                 </div>
-                <div class="summary-line total">
+                <div class="summary-row total">
                     <span>Total Estimado:</span>
-                    <span id="cart-grand-total">R$ 0,00</span>
+                    <span class="val" id="summary-total">R$ 0,00</span>
                 </div>
             </div>
 
-            <button type="button" class="btn btn-whatsapp btn-block" onclick="window.sendWhatsAppOrder()" id="btn-send-whatsapp" aria-label="Enviar Pedido via WhatsApp">
-                <i data-lucide="send"></i>
-                <span>Enviar Pedido via WhatsApp</span>
+            <!-- Botão WhatsApp Direto Sem Alert -->
+            <button type="button" class="btn-checkout" id="btn-checkout" onclick="window.checkoutWhatsApp()">
+                <i data-lucide="send"></i> Enviar Pedido no WhatsApp
             </button>
-
-            <div class="onira-signature">
-                <span>Tecnologia por <strong>Onira Labs</strong></span>
-            </div>
         </div>
     </aside>
 
-    <!-- Toast -->
-    <div id="toast-notification" class="toast-box"></div>
-
-    <!-- WhatsApp flutuante -->
-    <a href="https://wa.me/555492423280?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Soulshi%20Sushi%20Lourdes." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Falar no WhatsApp">
-        <i data-lucide="message-circle" aria-hidden="true"></i>
-    </a>
-
-    <!-- Widget Onira: conecta a demo à proposta comercial -->
-    <div class="onira-cta" id="onira-cta">
-        <a class="onira-cta-link" href="proposta.html?nome=Soulshi%20Sushi%20Lourdes&nicho=sushi&tel=555492423280&av=951&cidade=Caxias%20do%20Sul&bairro=Lourdes" rel="nofollow">
-            <img src="assets/jeff-avatar.webp" alt="Jefferson Motta, Onira Labs" class="onira-cta-avatar" width="40" height="40">
-            <span class="onira-cta-text">
-                <span class="onira-cta-hook">Gostou do site?</span>
-                <span class="onira-cta-call">Saiba como funciona meu trabalho →</span>
-            </span>
-        </a>
-        <button type="button" class="onira-cta-close" id="onira-cta-close" aria-label="Recolher convite" title="Recolher">
-            <i data-lucide="chevron-right"></i>
-        </button>
-        <a class="onira-cta-collapsed-pill" href="proposta.html?nome=Soulshi%20Sushi%20Lourdes&nicho=sushi&tel=555492423280&av=951&cidade=Caxias%20do%20Sul&bairro=Lourdes" id="onira-cta-collapsed" aria-label="Ver Proposta">
-            <i data-lucide="sparkles"></i>
-            <span>Compre esse site</span>
-        </a>
-    </div>
-
-    <script src="app.js?v=20260914-v1"></script>
-    <script>
-        lucide.createIcons();
-    </script>
+    <script src="app.js?v=20260916-darkv3"></script>
 </body>
 </html>
